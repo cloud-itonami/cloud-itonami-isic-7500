@@ -1,5 +1,5 @@
 # Nightly regeneration -- rebuild docs/samples/operator-console.html
-# through the REAL actor (veterinary.render-html, driving
+# through the REAL actor (vetops.render-html, driving
 # veterinary.operation/veterinary.governor/veterinary.store) and
 # commit only when the rendered console actually changed. Closes
 # flagship checklist item 2 (ADR-2607189300 at com-junkawasaki/root,
@@ -45,7 +45,7 @@ jobs:
       - name: verify (real output, not scaffolding)
         working-directory: orgs/cloud-itonami/cloud-itonami-isic-750
         run: |
-          grep -q 'veterinary.render-html' docs/samples/operator-console.html
+          grep -q 'vetops.render-html' docs/samples/operator-console.html
           grep -q '<tbody>' docs/samples/operator-console.html
           test "$(wc -l < docs/samples/operator-console.html)" -gt 30
           echo "operator console sanity ok"
