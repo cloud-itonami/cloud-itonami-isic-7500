@@ -1,6 +1,6 @@
-[{:itonami.blueprint/id "cloud-itonami-isic-750"
+[{:itonami.blueprint/id "cloud-itonami-isic-7500"
   :itonami.blueprint/name "Veterinary Activities - Operations Coordination"
-  :itonami.blueprint/isic-rev4 "750"
+  :itonami.blueprint/isic-rev4 "7500"
   :itonami.blueprint/domain :services/veterinary-practice-coordination
   :itonami.blueprint/license "AGPL-3.0-or-later"
   :itonami.blueprint/social-impact [:operational-efficiency :animal-welfare-support :facility-safety :accessibility]
