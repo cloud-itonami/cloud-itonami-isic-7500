@@ -1,5 +1,5 @@
 (ns vetops.sim
-  "Demo driver -- `clojure -M:dev:run`. Walks a clean appointment-
+  "Demo driver -- `kbb -M:dev:run`. Walks a clean appointment-
   scheduling coordination request through intake -> advise -> govern
   -> decide -> approval -> commit at phase 1 (assisted-scheduling,
   always approval), then re-runs the same op at phase 3

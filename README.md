@@ -62,19 +62,19 @@ neither repo's governor can approve what the other actor's governor exists to ga
 
 ```bash
 # Install dependencies (if inside the superproject, use :dev alias for local overrides)
-clojure -M:dev -P
+kbb -M:dev -P
 
 # Run tests
-clojure -M:dev:test
+kbb -M:dev:test
 
 # Run linter
-clojure -M:lint
+kbb -M:lint
 
 # Run demo
-clojure -M:dev:run
+kbb -M:dev:run
 
 # Regenerate docs/samples/operator-console.html from the real actor
-clojure -M:dev:render-html
+kbb -M:dev:render-html
 ```
 
 ## Test suite
