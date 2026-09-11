@@ -86,7 +86,7 @@ that repeats the governor's own banned substrings (e.g. a
 substring "診断") makes the governor's maximally-conservative scope
 filter HARD-hold the op unconditionally, every time, regardless of how
 clean the actual request is. This was caught empirically during this
-repo's own build (confirmed via `clojure -M:dev:test` failures before
+repo's own build (confirmed via `kbb -M:dev:test` failures before
 the fix, 0 failures after) -- `vetops.advisor`'s five proposal
 generators describe what IS being requested, not a negated list of
 banned terms, avoiding the trap rather than merely working around it
@@ -124,7 +124,7 @@ the generic identity/forms/dmn/bpmn/audit-ledger stack only.
   `:db/id` shape this fleet's other coordination-only group repos use
   (`861`/`869`/`873`/`879`), distinguishing it at a glance from
   class-level repos' plain-map shape.
-- (+) 42 tests / 122 assertions passing, `clojure -M:dev:run` demo
+- (+) 42 tests / 122 assertions passing, `kbb -M:dev:run` demo
   clean (all four coordination ops auto-commit at phase 3, the safety
   concern always escalates, all HARD-hold scenarios hold and never
   reach a human), `docs/samples/operator-console.html` regenerated
