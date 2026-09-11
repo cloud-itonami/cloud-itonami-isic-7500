@@ -102,7 +102,7 @@ never execute through the actor even though the governor would allow
 it. `vetops.phase`'s `:coordinate-appointment-scheduling`/
 `:coordinate-boarding-assignment`/`:coordinate-supply-request`/
 `:schedule-staff-shift-proposal` op names are verified identical to
-`vetops.governor/allowed-ops` by `test/vetops/phase_test.clj`'s
+`vetops.governor/allowed-ops` by `test/vetops/phase_test.cljk`'s
 `phase-3-auto-commits-clean-ops`.
 
 ### 7. No bespoke capability lib
