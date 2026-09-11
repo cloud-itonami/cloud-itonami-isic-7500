@@ -79,23 +79,23 @@ clojure -M:dev:render-html
 
 ## Test suite
 
-- `test/vetops/governor_test.clj` — unit tests of governor hard checks and scope exclusion
-- `test/vetops/governor_contract_test.clj` — full-graph integration tests
-- `test/vetops/advisor_test.clj` — proposal-generator shape/content tests
-- `test/vetops/phase_test.clj` — rollout-phase gating tests
-- `test/vetops/store_contract_test.clj` — `Store` protocol contract tests
+- `test/vetops/governor_test.cljk` — unit tests of governor hard checks and scope exclusion
+- `test/vetops/governor_contract_test.cljk` — full-graph integration tests
+- `test/vetops/advisor_test.cljk` — proposal-generator shape/content tests
+- `test/vetops/phase_test.cljk` — rollout-phase gating tests
+- `test/vetops/store_contract_test.cljk` — `Store` protocol contract tests
 
 ## Layout
 
 | File | Role |
 |---|---|
-| `src/vetops/store.cljc` | **Store** protocol — `MemStore` + append-only audit ledger + coordination log, keyed by string `:resource-id` |
-| `src/vetops/advisor.cljc` | **VetOpsAdvisor** — closed five-op proposal generator, `:effect` always `:propose` |
-| `src/vetops/governor.cljc` | **VetOps Governor** — 3 HARD checks + 1 always-escalate gate |
-| `src/vetops/phase.cljc` | **Phase 0→3** — read-only → assisted scheduling → assisted coordination → supervised auto |
-| `src/vetops/operation.cljc` | **OperationActor** — langgraph-clj StateGraph |
-| `src/vetops/sim.cljc` | demo driver |
-| `src/vetops/render_html.clj` | build-time renderer for `docs/samples/operator-console.html` |
+| `src/vetops/store.cljk` | **Store** protocol — `MemStore` + append-only audit ledger + coordination log, keyed by string `:resource-id` |
+| `src/vetops/advisor.cljk` | **VetOpsAdvisor** — closed five-op proposal generator, `:effect` always `:propose` |
+| `src/vetops/governor.cljk` | **VetOps Governor** — 3 HARD checks + 1 always-escalate gate |
+| `src/vetops/phase.cljk` | **Phase 0→3** — read-only → assisted scheduling → assisted coordination → supervised auto |
+| `src/vetops/operation.cljk` | **OperationActor** — langgraph-clj StateGraph |
+| `src/vetops/sim.cljk` | demo driver |
+| `src/vetops/render_html.cljk` | build-time renderer for `docs/samples/operator-console.html` |
 | `test/vetops/*_test.clj` | governor unit + contract · advisor · phase · store contract |
 
 ## Open business
