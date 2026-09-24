@@ -1,6 +1,6 @@
 (ns vetops.store-contract-test
   "Contract tests for `vetops.store/Store` protocol."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [vetops.store :as store]))
 
 (deftest mem-store-resource-lookup

@@ -1,6 +1,6 @@
 (ns vetops.phase-test
   "Unit tests of `vetops.phase` rollout logic."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [vetops.phase :as phase]))
 
 (def clean-verdict {:hard? false :escalate? false})
