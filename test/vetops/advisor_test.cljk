@@ -1,6 +1,6 @@
 (ns vetops.advisor-test
   "Unit tests of `vetops.advisor` proposal generation."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [vetops.advisor :as adv]
             [vetops.store :as store]))
 
